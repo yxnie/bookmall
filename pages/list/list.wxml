@@ -1,0 +1,17 @@
+<view class="top" wx:if="{{item.monthRank}}">
+  <view class="head {{tag==='0'?'color':''}}" data-item="0" bindtap="check" data-id="_id">周榜</view>
+  <view class="head {{tag==='1'?'color':''}}" data-item="1" bindtap="check" data-id="monthRank">月榜</view>
+  <view class="head {{tag==='2'?'color':''}}" data-item="2" bindtap="check" data-id="totalRank">总榜</view>
+</view>
+<view class="all">
+  <view wx:for="{{list}}" wx:key="{{index}}" class="book" bindtap="goBook" data-id="{{item}}">
+    <view>
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" lazy-load="{{true}}"></image>
+    </view>
+    <view class="con">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+    </view>
+  </view>
+</view>

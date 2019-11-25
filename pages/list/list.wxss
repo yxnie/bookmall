@@ -1,0 +1,68 @@
+.book {
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  height: 280rpx;
+}
+.list{
+  margin-top: 204rpx;
+  overflow: hidden;
+}
+.con {
+  flex: 1;
+  position: relative;
+}
+
+.book image {
+  display: block;
+  width: 200rpx;
+  height: 280rpx;
+  margin-right: 30rpx;
+}
+
+.shortIntro {
+  width: 440rpx;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #666
+}
+
+.book .title {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.author {
+  color: #666;
+  margin: 20rpx 0;
+}
+.all {
+  margin-top: 100rpx;
+  overflow:hidden; 
+}
+.head {
+  padding: 20rpx 0;
+}
+
+.color {
+  color: #cb1c36;
+  border-bottom: 2px solid #cb1c36;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  font-size: 34rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  z-index: 99;
+}

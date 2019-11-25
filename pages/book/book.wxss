@@ -1,0 +1,214 @@
+.img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.img image {
+  display: block;
+  width: 240rpx;
+  margin: auto;
+  height: 320rpx;
+  box-shadow: 4rpx 4rpx 10rpx #1f1d1db2;
+}
+
+.top {
+  height: 160rpx;
+  width: 100%;
+  background: #cb1c36;
+}
+
+.detail {
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.author {
+  margin: 14rpx 0;
+  color: #666;
+}
+
+.but {
+  display: flex;
+  justify-content: space-around;
+  margin: 10rpx 50rpx;
+}
+
+.read {
+  padding: 20rpx 60rpx;
+  border: 2rpx solid #ccc;
+  font-size: 30rpx;
+  border-radius: 80rpx;
+  color: white;
+  background: #cb1c36;
+}
+
+.add {
+  padding: 20rpx 60rpx;
+  border: 2rpx solid #ccc;
+  font-size: 30rpx;
+  border-radius: 80rpx;
+}
+
+.evaluate {
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+
+.evaluate image {
+  width: 32rpx;
+  height: 32rpx;
+  display: block;
+  margin: 0 8rpx;
+}
+
+.allStar {
+  display: flex;
+}
+
+.last {
+  text-align: center;
+  margin-top: 10rpx;
+}
+
+.lastChapter {
+  margin-left: 20rpx;
+  color: rgb(0, 140, 255);
+  font-size: 26rpx;
+}
+
+.top1 {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-around;
+  font-size: 34rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+
+.left {
+  margin-top: 30rpx;
+}
+
+.head {
+  padding: 20rpx 0;
+}
+
+.color {
+  color: #cb1c36;
+  border-bottom: 2px solid #cb1c36;
+}
+
+.content {
+  margin: 0 60rpx;
+}
+
+.comment {
+  display: flex;
+  margin: 40rpx 0;
+}
+
+.comment image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.comment .avatar {
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 40rpx;
+}
+
+.word {
+  flex: 1;
+}
+
+.nickname {
+  color: rgb(226, 94, 17);
+  margin-bottom: 10rpx;
+}
+
+.catalog {
+  display: flex;
+  justify-content: center;
+  margin: 40rpx 0;
+  padding: 8rpx 0;
+  font-size: 34rpx;
+  color: #666;
+  background: rgba(48, 45, 45, 0.274);
+}
+
+.catalog image {
+  width: 44rpx;
+  height: 44rpx;
+  display: block;
+  margin-right: 6rpx;
+}
+
+.moreTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.change {
+  display: flex;
+  color: #e16531;
+  margin-bottom: 20rpx;
+}
+
+.change image {
+  width: 44rpx;
+  height: 44rpx;
+  display: block;
+  margin-right: 10rpx;
+}
+
+.relatedBooks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.relatedBook image {
+  width: 190rpx;
+  height: 250rpx;
+  display: block;
+}
+
+.relatedBookTitle {
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+
+.modalDlg {
+  width: 100%;
+  position: fixed;
+  top: 15%;
+  left: 0;
+  z-index: 9999;
+}
+
+.modalDlg image {
+  width: 100%;
+  height: 900rpx;
+  display: block;
+}

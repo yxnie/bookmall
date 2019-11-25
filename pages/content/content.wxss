@@ -1,0 +1,41 @@
+@import '../../lib/wxParse/wxParse.wxss';
+.WxEmojiView {
+  text-indent: 2em;
+  margin-top: 40rpx;
+}
+.wxParse-inline {
+  display: block;
+  font-size: 34rpx;
+}
+.all {
+  margin: 40rpx;
+}
+.title {
+  font-size: 40rpx;
+  font-weight: bold;
+  padding-bottom: 30rpx;
+  border-bottom: 2rpx solid #999;
+}
+.foot {
+  display: flex;
+  justify-content: center;
+  color: white;
+  border-radius: 37rpx;
+  margin-top: 60rpx;
+}
+.left {
+  padding: 16rpx 30rpx;
+  background: red;
+  margin-right: 5rpx;
+  border-radius: 37rpx 0 0 37rpx;
+}
+.right {
+  padding: 16rpx 30rpx;
+  background: red;
+  margin-left: 5rpx;
+  border-radius: 0 37rpx 37rpx 0;
+}
+.center {
+  padding: 16rpx 30rpx;
+  background: red;
+}

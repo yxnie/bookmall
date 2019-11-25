@@ -1,0 +1,9 @@
+<view class="top">
+<view class="sort {{lock?'color':''}}" bindtap="bigger">正序</view>
+<view class="sort {{!lock?'color':''}}" bindtap="smaller">逆序</view>
+</view>
+<view class="all">
+<view wx:for="{{showList}}" wx:key="{{index}}" class="one" bindtap="goContent" data-item="{{item}}" data-index="{{index}}">
+{{item.title}}
+</view>
+</view>

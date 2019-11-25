@@ -1,0 +1,109 @@
+.top {
+  display: flex;
+  padding: 30rpx 4%;
+  font-size: 34rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 99;
+  width: 92%;
+}
+.top1 {
+  padding: 30rpx 4%;
+  font-size: 34rpx;
+  border-bottom: 2rpx solid #ccc;
+  position: fixed;
+  background: white;
+  top:99rpx;
+  z-index: 99;
+  width: 92%;
+  white-space: nowrap
+}
+.top .title {
+  margin-right: 16rpx;
+  font-size: 30rpx;
+}
+.top1 .title {
+  margin-right: 16rpx;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.book {
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  height: 280rpx;
+}
+.list{
+  margin-top: 204rpx;
+  overflow: hidden;
+}
+.con {
+  flex: 1;
+  position: relative;
+}
+
+image {
+  display: block;
+  width: 200rpx;
+  height: 280rpx;
+  margin-right: 30rpx;
+}
+
+.shortIntro {
+  width: 440rpx;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #666
+}
+
+.book .title {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.color {
+  color: #666;
+  margin: 20rpx 0;
+}
+.tags {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  height: 40rpx;
+  overflow: hidden;
+}
+.tag {
+  margin-right: 20rpx;
+  border-radius: 10rpx;
+  color: white;
+  padding: 0 10rpx;
+  font-size: 26rpx;
+}
+.color0 {
+  background: rgb(211, 14, 14);
+  border: 1px solid rgb(211, 14, 14);
+}
+.color1 {
+  background: rgb(120, 167, 76);
+  border: 1px solid rgb(120, 167, 76);
+}
+.color2 {
+  background: rgb(201, 167, 15);
+  border: 1px solid rgb(201, 167, 15);
+}
+.foot {
+  text-align: center;
+  margin: 40rpx 0;
+}
+.red {
+  color: red;
+}

@@ -1,0 +1,47 @@
+<view class="search">
+  <icon type="search" class="icon" wx:if="{{inputValue===''}}" />
+  <image src="../../images/cancel.png" class="cancel" wx:if="{{inputValue}}" bindtap="cancelValue"></image>
+  <input value="{{inputValue}}" bindinput="onInput" bindconfirm="setHistory" confirm-type="search" placeholder="输入书名或者作者名"></input>
+</view>
+<view wx:if="{{inputValue===''}}">
+<view class="moreTitle">
+  <view>大家都在搜</view>
+  <view class="change" bindtap="change">
+    <image src="../../images/refreshRed.png"></image>
+    <view>换一换</view>
+  </view>
+</view>
+<view class="hotWords">
+  <view wx:for="{{hotWords}}" wx:key="index" bindtap="hotGoBook" data-id="{{item.book}}">
+    <view wx:if="{{index<hotNum}}" class="hotWord" style="background:{{item.background}}">
+      {{item.word}}
+    </view>
+  </view>
+</view>
+<view class="moreTitle moreTitle1">
+  <view>搜索历史</view>
+  <view class="change" bindtap="removeAll">
+    <image src="../../images/delter.png"></image>
+    <view>清空</view>
+  </view>
+</view>
+<view>
+<view wx:for="{{history}}" wx:key="{{index}}" class="history" bindtap="searchHistory" data-item="{{item}}">
+<image src="../../images/history.png"></image>
+<view>{{item}}</view>
+</view> 
+</view>
+</view>
+<view class="all" wx:else>
+  <view wx:for="{{searchBooks}}" wx:key="{{index}}" class="book" bindtap="goBook" data-id="{{item}}">
+    <view>
+      <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" lazy-load="{{true}}"></image>
+    </view>
+    <view class="con">
+      <view class="title">{{item.title}}</view>
+      <view class="author">{{item.author}}</view>
+      <view class="shortIntro">{{item.shortIntro}}</view>
+      <view class="latelyFollower">最近收藏： {{item.latelyFollower}}</view>
+    </view>
+  </view>
+</view>

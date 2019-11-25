@@ -1,0 +1,129 @@
+.search {
+  position: fixed;
+  top: 0;
+  padding: 30rpx 5%;
+  font-size: 32rpx;
+  width: 90%;
+  z-index: 99;
+  background: white;
+}
+.cancel {
+  position: absolute;
+  width: 36rpx;
+  height: 36rpx;
+  display: flex;
+  right: 40rpx;
+  top: 44rpx;
+  z-index: 100;
+}
+.icon {
+  position: absolute;
+  top: 44rpx;
+  left: 190rpx;
+} 
+input {
+  text-align: center;
+  background: #efefef;
+  padding: 14rpx 0;
+  border-radius: 20rpx;
+}
+.moreTitle {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30rpx;
+  margin-top: 140rpx;
+}
+.moreTitle1 {
+  margin-top: 20rpx;
+}
+.change {
+  display: flex;
+  color: #e16531;
+  margin-bottom: 20rpx;
+}
+
+.change image {
+  width: 36rpx;
+  height: 36rpx;
+  display: block;
+  margin-right: 10rpx;
+}
+.hotWords {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 30rpx;
+  color: white;
+  padding-bottom: 30rpx;
+}
+.hotWord {
+  padding: 8rpx;
+  margin: 10rpx 10rpx 10rpx;
+}
+
+.book {
+  margin: 0 30rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  height: 280rpx;
+}
+.list{
+  margin-top: 204rpx;
+  overflow: hidden;
+}
+.con {
+  flex: 1;
+  position: relative;
+}
+
+.book image {
+  display: block;
+  width: 200rpx;
+  height: 280rpx;
+  margin-right: 30rpx;
+}
+
+.shortIntro {
+  width: 440rpx;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 26rpx;
+  line-height: 30rpx;
+  color: #666
+}
+
+.book .title {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.author {
+  color: #666;
+  margin: 20rpx 0;
+}
+.all {
+  margin-top: 100rpx;
+  overflow:hidden; 
+}
+.latelyFollower {
+  color: #e16531;
+  margin-top: 6rpx;
+}
+.history {
+  display: flex;
+  font-size:40rpx; 
+  margin: 0 30rpx;
+  line-height: 50rpx;
+  padding: 10rpx 0;
+}
+.history image {
+  height: 40rpx;
+  width: 40rpx;
+  display: block;
+  margin-right: 30rpx;
+  margin-top: 5rpx;
+}

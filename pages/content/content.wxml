@@ -1,0 +1,11 @@
+<import src="../../lib/wxParse/wxParse.wxml"/>
+<view class="all">
+<view class="title">{{title}}</view>
+<template is="wxParse" data="{{wxParseData:article.nodes}}" />
+<view class="foot">
+<view class="left" bindtap="add">上一章</view>
+<view class="center" bindtap="chapter">目录</view>
+<view class="right" bindtap="substract">下一章</view>
+</view>
+</view>
+

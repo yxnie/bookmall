@@ -1,0 +1,20 @@
+<view wx:if="{{calssify}}">
+<view class="top">
+<view class="{{tag==='0'?'color':''}} head" bindtap="check" data-item="0">分类</view>
+<view class="{{tag==='1'?'color':''}} head" bindtap="check" data-item="1">排行</view>  
+</view>
+<view wx:if="{{tag==='0'}}">
+<view class="title">男生</view>
+<classify data="{{calssify.male}}" category="male"></classify>
+<view class="title">女生</view>
+<classify data="{{calssify.female}}" category="female"></classify>
+<view class="title">出版</view>
+<classify data="{{calssify.press}}" category="press"></classify>
+</view>
+<view wx:if="{{tag==='1'}}">
+<view class="title">男生</view>
+<rank data="{{rank.male}}"></rank>
+<view class="title">女生</view>
+<rank data="{{rank.female}}"></rank>
+</view>
+</view>

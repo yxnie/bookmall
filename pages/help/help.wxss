@@ -1,0 +1,18 @@
+.top {
+  font-size: 52rpx;
+  font-weight: bold;
+  line-height: 70rpx;
+  margin: 0 30rpx;
+}
+.title {
+  color: #333;
+  line-height: 70rpx;
+  font-size: 36rpx;
+  margin: 0 30rpx;
+}
+.paragraph {
+  text-indent:2em;
+  color:#666;
+  line-height: 54rpx;
+  margin: 0 30rpx;
+}

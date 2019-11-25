@@ -1,0 +1,15 @@
+<view class="top">
+  <image src="../../images/check.png" wx:if="{{editLock}}" bindtap="goEdit"></image>
+  <image src="../../images/edit.png" wx:else bindtap="goEdit"></image>
+  <view class="help" bindtap="help">帮助</view>
+  <image src="../../images/refresh.png"></image>
+</view>
+<view wx:if="{{bookshelfContent.length}}" class="all">
+  <view wx:for="{{bookshelfContent}}" wx:key="{{index}}" class="content {{(index+1)%3===0?'mar':''}}" bindtap="goContent" data-item="{{item}}">
+    <image src="../../images/delter2.png" class="icon" wx:if="{{!editLock}}" catchtap="edit" data-index="{{index}}" data-id="{{item._id}}"></image>
+    <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}" class="img"></image>
+    <view class="title">{{item.title}}</view>
+    <view class="index">读到第{{item.index+1}}章</view>
+  </view>
+</view>
+<view wx:else class="none">主人还没有收藏书籍哦，请去书城收藏吧！</view>

@@ -1,0 +1,75 @@
+<view class="top"></view>
+<view class="img" wx:if="{{data.cover}}">
+  <image src="{{'https://statics.zhuishushenqi.com'+data.cover}}" bindtap="preview"></image>
+</view>
+<view class="detail">
+  <view class="title">{{data.title}}</view>
+  <view class="author">{{data.author}}</view>
+</view>
+<view class="but">
+  <view class="read" bindtap="startRead">开始阅读</view>
+  <view class="add" bindtap="addBookshelf" wx:if="{{addLock}}">加入书架</view>
+  <view class="add" wx:else>已加入书架</view>
+</view>
+<view class="evaluate">
+  <view class="allStar">
+    <view wx:for="{{star}}" wx:key="{{index}}">
+      <image src="../../images/redStar.png"></image>
+    </view>
+    <view wx:for="{{5-star}}" wx:key="{{index}}">
+      <image src="../../images/star.png"></image>
+    </view>
+  </view>
+</view>
+<view class="last">
+  更新至
+  <text class="lastChapter">{{data.lastChapter}}</text>
+</view>
+<view class="content">
+  <view class="top1">
+    <view class="{{tag==='0'?'color':''}} head" bindtap="check" data-item="0">详情</view>
+    <view class="{{tag==='1'?'color':''}} head" bindtap="check" data-item="1">评价({{total}})</view>
+  </view>
+  <scroll-view scroll-y="true" style="height: 750rpx;">
+    <view wx:if="{{tag==='0'}}" class="left">
+      <view>{{data.longIntro}}</view>
+      <view class="catalog" bindtap="goChapterList">
+        <image src="../../images/catalog.png"></image>
+        <view>总目录({{data.chaptersCount}}章)</view>
+      </view>
+      <view class="moreTitle">
+        <view>看过这本书的人还在看</view>
+        <view class="change" bindtap="change">
+          <image src="../../images/refreshRed.png"></image>
+          <view>换一换</view>
+        </view>
+      </view>
+      <view class="relatedBooks">
+        <view class="relatedBook" wx:for="{{showBook}}" wx:key="index" bindtap="goBook" data-id="{{item}}">
+          <view wx:if="{{item.cover}}">
+            <image src="{{'https://statics.zhuishushenqi.com'+item.cover}}"></image>
+          </view>
+          <view class="relatedBookTitle">{{item.title}}</view>
+        </view>
+
+      </view>
+    </view>
+    <view wx:if="{{tag==='1'}}">
+      <view wx:for="{{comment}}" wx:key="index" class="comment">
+        <view class="avatar">
+          <image src="{{'https://statics.zhuishushenqi.com'+item.author.avatar}}"></image>
+        </view>
+        <view class="word">
+          <view class="nickname">{{item.author.nickname}}</view>
+          <view class="commentContent">{{item.content}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="mask" wx:if="{{showModal}}" bindtap="go"></view>
+
+<view class="modalDlg" wx:if="{{showModal}}" bindtap="go" bindlongpress="handleLongPress">
+  <image src="{{'https://statics.zhuishushenqi.com'+data.cover}}"></image>
+</view>

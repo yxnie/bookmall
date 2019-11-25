@@ -1,0 +1,8 @@
+<view class="allClass">
+<view wx:for="{{data}}" wx:key="{{index}}" class="oneClass" bindtap="check" data-item="{{item.name}}">
+<view class="one">
+<view class="name">{{item.name}}</view>
+<view class="count">{{item.bookCount}}本</view>
+</view>
+</view>
+</view>
